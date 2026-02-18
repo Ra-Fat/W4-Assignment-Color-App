@@ -8,6 +8,7 @@ enum CardType {
   const CardType(this.color);
 }
 
+final colorService = ColorService();
 
 class ColorService extends ChangeNotifier {
   

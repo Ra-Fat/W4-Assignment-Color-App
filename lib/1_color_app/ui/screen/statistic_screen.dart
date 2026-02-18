@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../service/color_service.dart';
 
-final colorService = ColorService();
 
 class StatisticsScreen extends StatelessWidget {
   const StatisticsScreen({super.key});

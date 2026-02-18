@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import './ui/screen/colorTab_screen.dart';
 import './ui/screen/statistic_screen.dart';
-import './service/color_service.dart';
 
 void main() {
   runApp(
@@ -12,7 +11,6 @@ void main() {
   );
 }
 
-final colorService = ColorService();
 
 class Home extends StatefulWidget {
   const Home({super.key});
