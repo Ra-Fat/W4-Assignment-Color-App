@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../providers/color_service_provider.dart';
+import '../../providers/color_service_provider.dart';
 
 
 class ColorTap extends StatelessWidget {

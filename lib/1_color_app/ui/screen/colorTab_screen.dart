@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../providers/color_service_provider.dart';
+import '../providers/color_service_provider.dart';
 import './widget/color_tab.dart';
 
 class ColorTapsScreen extends StatelessWidget {
