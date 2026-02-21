@@ -8,22 +8,19 @@ enum CardType {
   const CardType(this.color);
 }
 
-final colorService = ColorService();
-
 class ColorService extends ChangeNotifier {
   
   // Map to track tap count for each CardType
   final Map<CardType, int> _counts = {
-    for (var type in CardType.values) type: 0,
+    for (final type in CardType.values)
+     type: 0,
   };
 
-
-  //get the current tap count for a specific CardType 
-  int getCount(CardType type) => _counts[type] ?? 0;
-
-  // Get the private _counts to access all counts
-  // read only
+  // Get count , read only
   Map<CardType, int> get counts => Map.unmodifiable(_counts);
+
+  // get the specific card type count
+  int getCount(CardType type) => _counts[type] ?? 0;
 
   // increment method
   void increment(CardType type) {
@@ -31,3 +28,6 @@ class ColorService extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+final colorService = ColorService();
+
